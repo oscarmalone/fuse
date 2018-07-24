@@ -15,7 +15,7 @@ public class MessageReceiver implements MessageListener {
 		if (message instanceof ObjectMessage) {
 			final ObjectMessage objectMessage = (ObjectMessage) message;
 			try {
-				System.out.println("Received message using on message");
+				System.out.println("Received a message using onMessage");
 				Book book = (Book) objectMessage.getObject();
 				System.out.println(book);
 			} catch (JMSException e) {
