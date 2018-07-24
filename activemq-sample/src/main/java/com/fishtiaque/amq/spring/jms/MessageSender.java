@@ -25,7 +25,7 @@ public class MessageSender {
 		MessageSender messageSender = (MessageSender) applicationContext.getBean("messageSender");
 		Book book = new Book(1, "Active MQ in Action", "Robert Bruce", 98.0f);
 		messageSender.send(book);
-		System.out.println("************** Done sending a book message ***************");
+		System.out.println("************** Done sending of a book message ***************");
 		System.exit(0);
 	}
 
