@@ -74,7 +74,7 @@ public class Sender {
 	private static void sendMessage(Session session, MessageProducer producer) throws Exception {
 		for (int i = 1; i <= 5; i++) {
 			TextMessage  message = session.createTextMessage("Active MQ messages "+new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(Calendar.getInstance().getTime()));
-			producer.send(message);//发送消息
+			producer.send(message);
 			System.out.println("****** Done Sending message ************");
 		}
 	}

@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>net.aimeizi</groupId>
+	<groupId>com.ishtiaque</groupId>
 	<artifactId>activemq-sample</artifactId>
 	<packaging>jar</packaging>
 	<version>1.0</version>
@@ -104,7 +104,7 @@
 				</plugins>
 			</build>
 		</profile>
-		<!-- activemq 消息发送者 生产者 -->
+		<!-- activemq-->
 		<profile>
 			<id>producer</id>
 			<build>
@@ -129,7 +129,6 @@
 				</plugins>
 			</build>
 		</profile>
-		<!-- activemq 消息接受者 消费者 -->
 		<profile>
 			<id>consumer</id>
 			<build>
